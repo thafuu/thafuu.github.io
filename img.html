@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="css/img.css">
+</head>
+<div id="videoMessage">Hãy xem video này nha</div>
+title>Video Player</title>
+    <style>
+        /* Căn chỉnh video */
+        #videoContainer {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            z-index: 10;
+        }
+        
+        #videoPlayer {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            display: block;
+        }
+        
+        /* Nút tiếp tục */
+        #continueButton {
+            display: block;
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 18px;
+            text-align: center;
+            padding: 10px 20px;
+            background: #ffc0cb;
+            color: #ffffff;
+            border: 2px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Container -->
+    <div id="videoContainer">
+        <video id="videoPlayer" controls>
+            <source src="img/video.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
+        <a id="continueButton" href="memories.html">Trang cuối</a>
+    </div>
+    
+    <script>
+        // Hiển thị nút "Tiếp tục" khi video kết thúc
+        document.getElementById("videoPlayer").addEventListener("ended", function() {
+            document.getElementById("continueButton").style.display = "block";
+        });
+    </script>
+<body>
+<div class="htmleaf-container">
+    <div class="wrapper">
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+<img id="gifImage" src="" alt="GIF" class="gif-right" style="display: none;">
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/img.js"></script>
+</body>
+</html>
